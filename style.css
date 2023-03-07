@@ -57,4 +57,58 @@ body {
 
 }
 
+#menu[data-active-index="0"] > #menu-background-pattern {
+    background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"] > #menu-background-pattern {
+    background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-pattern {
+    background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-background-pattern {
+    background-position: 0% -100%;
+}
+
+
+#menu[data-active-index="0"] > #menu-background-image {
+    background-position: center 45%;
+}
+
+#menu[data-active-index="1"] > #menu-background-image {
+    background-position: center 50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-image {
+    background-position: center 55%;
+}
+
+#menu[data-active-index="3"] > #menu-background-image {
+    background-position: center 60%;
+}
+
+#menu-background-image {
+    height: 100%;
+    width: 100%;
+    background-image: url("assets.jpg");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    background-position: center 40%;
+    background-size: 110vmax;
+    opacity: 0.15;
+    transition: opacity 800ms ease,
+      background-size 800ms ease,
+      background-position 800ms ease;
+}
+
+#menu-items:hover ~ #menu-background-image {
+    background-size: 100vmax;
+    opacity: 0.10;
+}
+
 
