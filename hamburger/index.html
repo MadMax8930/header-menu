@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Hamburger Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+
+        <h1 class="logo">Company<span>Logo</span></h1>
+        <!--class="menu-toggle open" (if clicked), class="menu-toggle" (default)-->
+        <button class="menu-toggle" role="button">
+           <div class="hamburger"></div>
+        </button> 
+        <!--class="site-nav--open" (if clicked), class="site-nav--closed" (default)-->
+        <nav class="site-nav site-nav--closed">
+            <ul>    
+                <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li> 
+                <li><a href=""><i class="fa fa-info site-nav--icon"></i>About</a></li>  
+                <li><a href=""><i class="fa fa-pencil site-nav--icon"></i>Blog</a></li>
+                <li><a href=""><i class="fa fa-usd site-nav--icon"></i>Pricing</a></li>
+                <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Contact</a></li>
+            </ul> 
+        </nav>     
+
+    </div>
+  </header>  
+</body>
+</html>
